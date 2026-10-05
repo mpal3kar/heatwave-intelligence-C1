@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Climate Intelligence Analytics (JavaScript) - Heatwave Intelligence</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header class="site-header">
+<h1 class="site-title">Climate Intelligence Analytics (JavaScript Engine)</h1>
+        <p class="site-subtitle">Client-Side Computational Logic: Arrays, Objects &amp; Threshold Detection</p>
+        <div class="team-badge">Team: Mohammad Palekar (16010125167) | Gaurav (16010125164) | Samarth (16010125161) &bull; Div: C-1</div>
+    </header>
+
+    <nav class="main-nav">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="alerts.html">Alert Bulletin</a></li>
+            <li><a href="about.html">About &amp; Stakeholders</a></li>
+            <li><a href="forecast.html">Forecast Table</a></li>
+            <li><a href="hotspot.html">Hotspot Map</a></li>
+            <li><a href="analysis.html" class="active">Climate Analytics (JS)</a></li>
+            <li><a href="register.html">Registration &amp; Alerts</a></li>
+            <li><a href="media.html">Media &amp; Awareness</a></li>
+        </ul>
+    </nav>
+
+    <div class="container layout-grid">
+        <main class="main-content">
+            <!-- Module 1: Temperature Array Analysis (Exp 5 Task 4) -->
+            <section class="card">
+                <h2>1. Multi-Day Temperature Array Traversal (Exp 5 Task 4)</h2>
+                <p>The array <code>temperatureReadings = [34, 36, 38, 39, 41, 40, 37, 35, 39, 42]</code> represents continuous sensor telemetry. JavaScript loops process min, max, averages, and threshold violations:</p>
+                
+                <div class="stat-grid">
+                    <div class="stat-card">
+                        <div class="stat-val" id="statMin">--</div>
+                        <div class="stat-label">Minimum Temperature</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-val" id="statMax">--</div>
+                        <div class="stat-label">Maximum Temperature</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-val" id="statAvg">--</div>
+                        <div class="stat-label">Average Temperature</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-val" id="statThreshold">--</div>
+                        <div class="stat-label">Days Above 37&deg;C Threshold</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-val" id="statAbove40">--</div>
+                        <div class="stat-label">Critical Days (&ge; 40&deg;C)</div>
+                    </div>
+                </div>
+
+                <div class="calc-result-box">
+                    <p><strong>Raw Array Traversal:</strong> <span id="statReadings"></span></p>
+                    <p style="margin-top: 6px;"><strong>Extreme Readings Identified (&ge; 40&deg;C):</strong> <span id="statHwList" style="color: #dc2626; font-weight: bold;"></span></p>
+                </div>
+            </section>
+
+            <!-- Module 2: Interactive Threshold Calculator (Exp 5 Task 1 & 2) -->
+            <section class="card">
+                <h2>2. Interactive Heatwave Threshold Calculator (Exp 5 Task 1 &amp; 2)</h2>
+                <p>Test the client-side decision logic by providing station observations below:</p>
+
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 12px; margin-top: 12px;">
+                    <div class="form-group">
+                        <label for="customLocation">Location Name:</label>
+                        <input type="text" id="customLocation" class="form-control" value="Mumbai Station" placeholder="e.g. Pune, Mumbai">
+                    </div>
+                    <div class="form-group">
+                        <label for="customTemp">Observed Temperature (&deg;C):</label>
+                        <input type="number" id="customTemp" class="form-control" value="39">
+                    </div>
+                    <div class="form-group">
+                        <label for="customHumidity">Humidity (%):</label>
+                        <input type="number" id="customHumidity" class="form-control" value="65">
+                    </div>
+                    <div class="form-group">
+                        <label for="customThreshold">Heatwave Threshold (&deg;C):</label>
+                        <input type="number" id="customThreshold" class="form-control" value="37">
+                    </div>
+                </div>
+
+                <button type="button" class="btn btn-primary" onclick="checkCustomTemperature()">Compute Risk &amp; Alert Level</button>
+
+                <div id="customCalcResult" class="calc-result-box" style="display: none; border-left: 5px solid #ea580c;"></div>
+            </section>
+
+            <!-- Module 3: Climate Monitoring Object Literal (Exp 5 Task 3) -->
+            <section class="card">
+                <h2>3. Climate Object-Oriented Entity (Exp 5 Task 3)</h2>
+                <p>Demonstrates encapsulation using a JavaScript Object literal (<code>climateData</code>) with state properties and attached member functions:</p>
+
+                <div id="objectDemoOutput" class="calc-result-box" style="background:#f0fdf4; border: 1px solid #bbf7d0;">
+                    Loading climate object telemetry...
+                </div>
+            </section>
+        </main>
+
+        <aside class="sidebar">
+            <div class="card">
+                <h2>JavaScript Concepts Tested</h2>
+                <ul class="feed-list">
+                    <li><strong>Primitive Types &amp; Operators:</strong> Arithmetic difference calculation and logic operators (<code>&amp;&amp;</code>, <code>||</code>).</li>
+                    <li><strong>Decision Rules:</strong> <code>if / else if / else</code> multi-tier threshold trees.</li>
+                    <li><strong>Array Manipulation:</strong> Array traversal loops, accumulator sums, push filters.</li>
+                    <li><strong>Object Methods:</strong> <code>this</code> keyword binding inside JavaScript objects.</li>
+                    <li><strong>DOM Interaction:</strong> Dynamic innerHTML updates and style modification.</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h2>Console Output</h2>
+                <p>Inspect browser developer console (<code>F12 &rarr; Console</code>) to observe automated script trace logs for array analysis and object calls.</p>
+            </div>
+        </aside>
+    </div>
+
+    <footer class="site-footer">
+        <p>Heatwave Intelligence Portal &copy; 2026</p>
+        <p>Mini Project — Mohammad Palekar (16010125167), Gaurav (16010125164), Samarth (16010125161)</p>
+    </footer>
+
+    <script src="js/analytics.js"></script>
+</body>
+</html>

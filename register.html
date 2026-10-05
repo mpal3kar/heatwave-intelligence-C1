@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stakeholder Registration &amp; Early Warning Subscription</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header class="site-header">
+<h1 class="site-title">Climate Intelligence Registration &amp; Alerts</h1>
+        <p class="site-subtitle">Client-Side JavaScript Form Validation Module (Regular Expressions &amp; DOM)</p>
+        <div class="team-badge">Team: Mohammad Palekar (16010125167) | Gaurav (16010125164) | Samarth (16010125161) &bull; Div: C-1</div>
+    </header>
+
+    <nav class="main-nav">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="alerts.html">Alert Bulletin</a></li>
+            <li><a href="about.html">About &amp; Stakeholders</a></li>
+            <li><a href="forecast.html">Forecast Table</a></li>
+            <li><a href="hotspot.html">Hotspot Map</a></li>
+            <li><a href="analysis.html">Climate Analytics (JS)</a></li>
+            <li><a href="register.html" class="active">Registration &amp; Alerts</a></li>
+            <li><a href="media.html">Media &amp; Awareness</a></li>
+        </ul>
+    </nav>
+
+    <div class="container layout-grid">
+        <main class="main-content">
+            <!-- Full Stakeholder Registration Form (Exp 5 Task 6) -->
+            <section class="card">
+                <h2>Climate Intelligence Stakeholder Enrollment Form</h2>
+                <p>Register as a verified observer or priority recipient. All fields are dynamically validated against regular expressions before submission.</p>
+                <br>
+
+                <div id="regSuccessMsg" class="alert-success">
+                    <h3>&#10004; Registration Successful!</h3>
+                    <p>You have been successfully registered for Climate Intelligence Heatwave Monitoring and Early-Warning Bulletins. Your details have satisfied all validation constraints.</p>
+                </div>
+
+                <form id="climateRegForm" novalidate>
+                    <fieldset>
+                        <legend>User Credentials &amp; Contact Telemetry</legend>
+
+                        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 14px;">
+                            <div class="form-group">
+                                <label for="regName">User / Observer Full Name: *</label>
+                                <input type="text" id="regName" class="form-control" placeholder="e.g. Rahul Sharma">
+                                <span id="regNameErr" class="error-msg"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="regMobile">Mobile Number (Indian 10-digit): *</label>
+                                <input type="tel" id="regMobile" class="form-control" placeholder="e.g. 9876543210" maxlength="10">
+                                <span id="regMobileErr" class="error-msg"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="regEmail">Email Address: *</label>
+                                <input type="email" id="regEmail" class="form-control" placeholder="e.g. rahul@email.com">
+                                <span id="regEmailErr" class="error-msg"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="regUserId">Climate User ID (CLM-XXXX): *</label>
+                                <input type="text" id="regUserId" class="form-control" placeholder="e.g. CLM-1234">
+                                <span id="regUserIdErr" class="error-msg"></span>
+                            </div>
+                        </div>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Location &amp; Alert Preferences</legend>
+
+                        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 14px;">
+                            <div class="form-group">
+                                <label for="regCity">Location / City: *</label>
+                                <input type="text" id="regCity" class="form-control" placeholder="e.g. Mumbai">
+                                <span id="regCityErr" class="error-msg"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="regPin">PIN / Postal Code (6 Digits): *</label>
+                                <input type="text" id="regPin" class="form-control" placeholder="e.g. 400077" maxlength="6">
+                                <span id="regPinErr" class="error-msg"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="regAge">Age Group: *</label>
+                                <select id="regAge" class="form-control">
+                                    <option value="">-- Select Age Group --</option>
+                                    <option value="under18">Under 18</option>
+                                    <option value="18-40">18 - 40</option>
+                                    <option value="41-60">41 - 60</option>
+                                    <option value="above60">Above 60 (Priority Vulnerable)</option>
+                                </select>
+                                <span id="regAgeErr" class="error-msg"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="regCategory">User Category: *</label>
+                                <select id="regCategory" class="form-control">
+                                    <option value="">-- Select Category --</option>
+                                    <option value="student">Student</option>
+                                    <option value="general">General Public</option>
+                                    <option value="outdoor">Outdoor Worker</option>
+                                    <option value="healthcare">Healthcare Worker</option>
+                                    <option value="officer">Government / Disaster Officer</option>
+                                </select>
+                                <span id="regCategoryErr" class="error-msg"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="regChannel">Preferred Alert Channel: *</label>
+                                <select id="regChannel" class="form-control">
+                                    <option value="">-- Select Channel --</option>
+                                    <option value="sms">SMS</option>
+                                    <option value="email">Email</option>
+                                    <option value="app">Mobile App Notification</option>
+                                    <option value="all">All Channels</option>
+                                </select>
+                                <span id="regChannelErr" class="error-msg"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="regDate">Registration Date: *</label>
+                                <input type="date" id="regDate" class="form-control">
+                                <span id="regDateErr" class="error-msg"></span>
+                            </div>
+                        </div>
+                    </fieldset>
+
+                    <div style="margin-top: 15px;">
+                        <button type="submit" class="btn btn-primary">Submit Registration</button>
+                        <button type="reset" class="btn btn-secondary">Clear Form</button>
+                    </div>
+                </form>
+            </section>
+        </main>
+
+        <aside class="sidebar">
+            <div class="card">
+                <h2>Validation Criteria</h2>
+                <ul class="feed-list">
+                    <li><strong>Name:</strong> Alphabets &amp; spaces only (&ge; 3 chars).</li>
+                    <li><strong>Mobile:</strong> Exactly 10 digits starting with 6, 7, 8, or 9.</li>
+                    <li><strong>Email:</strong> Standard RFC compliant address.</li>
+                    <li><strong>User ID:</strong> Pattern <code>CLM-XXXX</code> (4 digits).</li>
+                    <li><strong>PIN:</strong> Exactly 6 numeric digits.</li>
+                    <li><strong>Date:</strong> Cannot be set in the future.</li>
+                </ul>
+            </div>
+
+            <!-- Quick Advisory Subscription Card (Exp 1 Task 8) -->
+            <div class="card">
+                <h2>Quick SMS Alerts</h2>
+                <form id="quickSubscribeForm">
+                    <div class="form-group">
+                        <label for="subName">Name:</label>
+                        <input type="text" id="subName" class="form-control" placeholder="Your Name">
+                        <span id="subNameErr" class="error-msg"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="subEmail">Email:</label>
+                        <input type="email" id="subEmail" class="form-control" placeholder="Email ID">
+                        <span id="subEmailErr" class="error-msg"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="subMobile">Mobile:</label>
+                        <input type="tel" id="subMobile" class="form-control" placeholder="10-digit mobile">
+                        <span id="subMobileErr" class="error-msg"></span>
+                    </div>
+                    <button type="submit" class="btn btn-primary" style="width: 100%;">Quick Subscribe</button>
+                    <div id="subSuccessMsg" class="alert-success" style="font-size:12px; margin-top:8px;">Subscribed!</div>
+                </form>
+            </div>
+        </aside>
+    </div>
+
+    <footer class="site-footer">
+        <p>Heatwave Intelligence Portal &copy; 2026</p>
+        <p>Mini Project — Mohammad Palekar (16010125167), Gaurav (16010125164), Samarth (16010125161)</p>
+    </footer>
+
+    <script src="js/validation.js"></script>
+    <script>
+        if (window.location.search.includes('validate=1')) {
+            setTimeout(function() {
+                document.querySelector('#climateRegForm button[type=submit]').click();
+            }, 100);
+        }
+    </script>
+</body>
+</html>

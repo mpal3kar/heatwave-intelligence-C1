@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media &amp; Awareness Center - Heatwave Intelligence</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header class="site-header">
+<h1 class="site-title">Media &amp; Community Awareness Center</h1>
+        <p class="site-subtitle">Multimedia Broadcasts, Broadcast Feeds &amp; Synoptic Doppler Frames</p>
+        <div class="team-badge">Team: Mohammad Palekar (16010125167) | Gaurav (16010125164) | Samarth (16010125161) &bull; Div: C-1</div>
+    </header>
+
+    <nav class="main-nav">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="alerts.html">Alert Bulletin</a></li>
+            <li><a href="about.html">About &amp; Stakeholders</a></li>
+            <li><a href="forecast.html">Forecast Table</a></li>
+            <li><a href="hotspot.html">Hotspot Map</a></li>
+            <li><a href="analysis.html">Climate Analytics (JS)</a></li>
+            <li><a href="register.html">Registration &amp; Alerts</a></li>
+            <li><a href="media.html" class="active">Media &amp; Awareness</a></li>
+        </ul>
+    </nav>
+
+    <div class="container layout-grid">
+        <main class="main-content">
+            <!-- Video & Audio Broadcast (Exp 1 Task 9) -->
+            <section class="card">
+                <h2>1. Heatwave Awareness Video Broadcast (&lt;video&gt;)</h2>
+                <p>Public health instruction video detailing immediate response for heat exhaustion and heatstroke symptoms:</p>
+                <div style="margin-top: 12px; background: #000; display: inline-block; border-radius: 6px; overflow: hidden;">
+                    <video width="640" height="360" controls poster="images/region-map.png" style="max-width: 100%; height: auto; display: block;">
+                        <source src="media/awareness-video.mp4" type="video/mp4">
+                        <p>Your browser does not support HTML5 video streaming.</p>
+                    </video>
+                </div>
+            </section>
+
+            <section class="card">
+                <h2>2. Background Audio Advisory Bulletin (&lt;audio&gt;)</h2>
+                <p>Listen to the emergency audio broadcast issued by the State Disaster Management Directorate:</p>
+                <div style="margin-top: 12px; padding: 12px; background: #f1f5f9; border-radius: 6px; display: inline-block;">
+                    <audio controls style="vertical-align: middle;">
+                        <source src="media/advisory-audio.mp3" type="audio/mpeg">
+                        Your browser does not support HTML5 audio playback.
+                    </audio>
+                </div>
+            </section>
+
+            <!-- External Synoptic Frame (Exp 1 Task 9) -->
+            <section class="card">
+                <h2>3. Synoptic Weather Monitoring Frame (&lt;iframe&gt;)</h2>
+                <p>Live embedded weather telemetry from the national meteorological radar network:</p>
+                <div style="margin-top: 12px; border: 1px solid #cbd5e1; border-radius: 6px; overflow: hidden;">
+                    <iframe src="https://mausam.imd.gov.in" width="100%" height="420" title="IMD Live Radar Site" style="border:none;"></iframe>
+                </div>
+                <noscript>
+                    <div style="background: #fee2e2; color: #b91c1c; padding: 12px; margin-top: 10px; border-radius: 4px;">
+                        <p><strong>Warning:</strong> JavaScript is currently disabled in your browser. Please enable JavaScript to access live radar telemetry and dynamic alerts.</p>
+                    </div>
+                </noscript>
+            </section>
+        </main>
+
+        <aside class="sidebar">
+            <div class="card">
+                <h2>Media Controls Used</h2>
+                <ul class="feed-list">
+                    <li><code>&lt;video controls&gt;</code> &mdash; Native player with play/pause/volume controls.</li>
+                    <li><code>&lt;audio controls&gt;</code> &mdash; Native audio playback container.</li>
+                    <li><code>&lt;iframe&gt;</code> &mdash; External sandbox embed for IMD radar charts.</li>
+                    <li><code>&lt;noscript&gt;</code> &mdash; Graceful degradation fallback for non-script clients.</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h2>Emergency Broadcast Channels</h2>
+                <p><strong>Radio:</strong> AIR 100.1 FM</p>
+                <p style="margin-top: 6px;"><strong>Disaster Toll-Free:</strong> 1077</p>
+                <p style="margin-top: 6px;"><strong>Ambulance:</strong> 108</p>
+            </div>
+        </aside>
+    </div>
+
+    <footer class="site-footer">
+        <p>Heatwave Intelligence Portal &copy; 2026</p>
+        <p>Mini Project — Mohammad Palekar (16010125167), Gaurav (16010125164), Samarth (16010125161)</p>
+    </footer>
+
+</body>
+</html>
