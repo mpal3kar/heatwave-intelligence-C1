@@ -94,7 +94,7 @@ def create_deck():
     p0.alignment = PP_ALIGN.CENTER
 
     p1 = tf.add_paragraph()
-    p1.text = "Academic Year 2026-27 • Semester III"
+    p1.text = "Academic Year 2026-27 - Semester III"
     p1.font.size = Pt(12)
     p1.font.color.rgb = DARK_GRAY
     p1.alignment = PP_ALIGN.CENTER
@@ -125,7 +125,7 @@ def create_deck():
     p4.space_after = Pt(8)
 
     p5 = tf.add_paragraph()
-    p5.text = "1. Mohammad Palekar (16010125167)  •  2. Gaurav (16010125164)  •  3. Samarth (16010125161)"
+    p5.text = "1. Mohammad Palekar (16010125167)  -  2. Gaurav (16010125164)  -  3. Samarth (16010125161)"
     p5.font.size = Pt(15)
     p5.font.bold = True
     p5.font.color.rgb = NAVY
@@ -147,16 +147,16 @@ def create_deck():
 
     rubrics = [
         ("1. Timely Submission & Team Performance", "5 Marks",
-         "• Submission on time before deadline (8th October).\n• Active participation of all 3 team members (Mohammad, Gaurav, Samarth).\n• Seamless integration of HTML5, CSS3, and JS modules into one unified web portal.",
+         "- Submission on time before deadline (8th October).\n- Active participation of all 3 team members (Mohammad, Gaurav, Samarth).\n- Seamless integration of HTML5, CSS3, and JS modules into one unified web portal.",
          RGBColor(238, 242, 255), RGBColor(79, 70, 229)),
         ("2. Designing & Documentation", "10 Marks",
-         "• Well-organized semantic content structure across 8 pages.\n• Proper GUI design properties: cohesive color scheme, CSS Box model, zebra tables, card layouts.\n• Comprehensive documentation & code compendium for each member.",
+         "- Well-organized semantic content structure across 8 pages.\n- Proper GUI design properties: cohesive color scheme, CSS Box model, zebra tables, card layouts.\n- Comprehensive documentation & code compendium for each member.",
          RGBColor(254, 242, 242), RGBColor(220, 38, 38)),
         ("3. Accessibility & Layout Flexibility", "5 Marks",
-         "• 100% Cross-browser compatible (tested on Chrome, Edge, Firefox).\n• Layout does not depend on fixed screen resolutions (responsive CSS flexbox & media queries).\n• Accessible tags (<abbr>, alt texts, <noscript> fallback).",
+         "- 100% Cross-browser compatible (tested on Chrome, Edge, Firefox).\n- Layout does not depend on fixed screen resolutions (responsive CSS flexbox & media queries).\n- Accessible tags (<abbr>, alt texts, <noscript> fallback).",
          RGBColor(240, 253, 244), RGBColor(22, 163, 74)),
         ("4. Presentation & Specific Features", "5 Marks",
-         "• Live demonstration of specific features: JS Regex validation, Climate Array Analytics, Object methods, Image Maps, Multimedia.\n• Clear presentation answering all technical and viva questions.",
+         "- Live demonstration of specific features: JS Regex validation, Climate Array Analytics, Object methods, Image Maps, Multimedia.\n- Clear presentation answering all technical and viva questions.",
          RGBColor(254, 243, 199), RGBColor(217, 119, 6))
     ]
 
@@ -210,7 +210,7 @@ def create_deck():
     for b in bullets:
         p_b = tf3.add_paragraph()
         parts = b.split(":", 1)
-        p_b.text = "• " + parts[0] + ":"
+        p_b.text = "- " + parts[0] + ":"
         p_b.font.bold = True
         p_b.font.size = Pt(13)
         p_b.font.color.rgb = NAVY
@@ -274,7 +274,7 @@ def create_deck():
 
     for title, desc in tech_items:
         p_m = tf5.add_paragraph()
-        p_m.text = "• " + title + ": "
+        p_m.text = "- " + title + ": "
         p_m.font.bold = True
         p_m.font.size = Pt(13)
         p_m.font.color.rgb = NAVY
@@ -293,13 +293,13 @@ def create_deck():
 
     members = [
         ("Mohammad Palekar (16010125167)", "Project Lead & Core HTML5 Architecture",
-         "• Developed index.html, about.html, and media.html.\n• Designed multi-column meteorological tables (forecast.html) with rowspan and colspan.\n• Implemented client-side Image Maps (hotspot.html) with clickable sector coordinates.\n• Embedded native HTML5 multimedia (<video>, <audio>, <iframe> radar feeds) and <noscript> fallbacks.",
+         "- Developed index.html, about.html, and media.html.\n- Designed multi-column meteorological tables (forecast.html) with rowspan and colspan.\n- Implemented client-side Image Maps (hotspot.html) with clickable sector coordinates.\n- Embedded native HTML5 multimedia (<video>, <audio>, <iframe> radar feeds) and <noscript> fallbacks.",
          RGBColor(254, 242, 242), CRIMSON),
         ("Gaurav (16010125164)", "Front-End UI/UX & CSS3 Styling Specialist",
-         "• Engineered global styling sheet (css/style.css) adhering to separation of concerns.\n• Built responsive layout grid with flexbox, card containers, and sticky navigation bar.\n• Styled data tables with zebra-striping (tr:nth-child(even)) and hover feedback.\n• Crafted CSS @keyframes glowing alert box for Level 4 extreme heat advisory notices.",
+         "- Engineered global styling sheet (css/style.css) adhering to separation of concerns.\n- Built responsive layout grid with flexbox, card containers, and sticky navigation bar.\n- Styled data tables with zebra-striping (tr:nth-child(even)) and hover feedback.\n- Crafted CSS @keyframes glowing alert box for Level 4 extreme heat advisory notices.",
          RGBColor(240, 253, 244), RGBColor(22, 163, 74)),
         ("Samarth (16010125161)", "JavaScript Engine & Form Validation Engineer",
-         "• Programmed js/validation.js utilizing Regular Expressions for 6 strict field constraints.\n• Created DOM error injection and real-time success alert banners on form submission.\n• Engineered js/analytics.js for multi-day temperature array analysis (min, max, average, threshold count).\n• Implemented object-oriented climateData entity with member methods using this keyword.",
+         "- Programmed js/validation.js utilizing Regular Expressions for 6 strict field constraints.\n- Created DOM error injection and real-time success alert banners on form submission.\n- Engineered js/analytics.js for multi-day temperature array analysis (min, max, average, threshold count).\n- Implemented object-oriented climateData entity with member methods using this keyword.",
          RGBColor(238, 242, 255), RGBColor(79, 70, 229))
     ]
 
@@ -359,7 +359,7 @@ def create_deck():
 
     for title, desc in modules:
         p_mod = tf7.add_paragraph()
-        p_mod.text = "• " + title + ": "
+        p_mod.text = "- " + title + ": "
         p_mod.font.bold = True
         p_mod.font.size = Pt(12)
         p_mod.font.color.rgb = NAVY
@@ -498,7 +498,7 @@ def create_deck():
 
     for title, desc in experiments:
         p_e = tf11.add_paragraph()
-        p_e.text = "• " + title + ": "
+        p_e.text = "- " + title + ": "
         p_e.font.bold = True
         p_e.font.size = Pt(13)
         p_e.font.color.rgb = CRIMSON
@@ -535,7 +535,7 @@ def create_deck():
     ]
     for pt in concl_points:
         p_c = tf12_l.add_paragraph()
-        p_c.text = "• " + pt
+        p_c.text = "- " + pt
         p_c.font.size = Pt(12)
         p_c.font.color.rgb = DARK_GRAY
         p_c.space_after = Pt(8)
@@ -560,7 +560,7 @@ def create_deck():
     ]
     for pt in future_points:
         p_f = tf12_r.add_paragraph()
-        p_f.text = "• " + pt
+        p_f.text = "- " + pt
         p_f.font.size = Pt(12)
         p_f.font.color.rgb = DARK_GRAY
         p_f.space_after = Pt(8)

@@ -4,7 +4,6 @@
    Div: C-1
 */
 
-/* Reset & Human-Crafted Student Styling */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -12,35 +11,34 @@
 }
 
 body {
-    font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, "Roboto", "Helvetica Neue", Arial, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #f8f9fa;
     color: #24292e;
-    line-height: 1.55;
+    line-height: 1.5;
     padding-bottom: 30px;
 }
 
-/* Header Section - Left-Aligned */
+/* Header Section - Left-Aligned with minimal margin */
 header.site-header {
     background-color: #ffffff;
     border-bottom: 1px solid #d0d7de;
-    padding: 18px 0;
+    padding: 16px 0;
     text-align: left;
 }
 
 .header-inner {
-    max-width: 1060px;
-    margin: 0 auto;
-    padding: 0 16px;
+    max-width: 1200px;
+    margin-left: 24px;
+    margin-right: 24px;
     text-align: left;
 }
 
 .site-title {
     color: #111827;
-    font-size: 24px;
+    font-size: 22px;
     font-weight: 700;
-    margin: 0 0 6px 0;
+    margin-bottom: 6px;
     text-align: left;
-    letter-spacing: -0.3px;
 }
 
 .team-badge {
@@ -64,16 +62,16 @@ nav.main-nav {
 }
 
 nav.main-nav .nav-inner {
-    max-width: 1060px;
-    margin: 0 auto;
-    padding: 0 16px;
+    max-width: 1200px;
+    margin-left: 24px;
+    margin-right: 24px;
 }
 
 nav.main-nav ul {
     list-style-type: none;
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-start; /* LEFT ALIGNED */
+    justify-content: flex-start;
     margin: 0;
     padding: 0;
 }
@@ -86,8 +84,8 @@ nav.main-nav a {
     display: block;
     color: #f0f6fc;
     text-decoration: none;
-    padding: 10px 14px;
-    font-size: 13.5px;
+    padding: 9px 13px;
+    font-size: 13px;
     font-weight: 500;
     transition: background-color 0.15s ease;
 }
@@ -103,16 +101,16 @@ nav.main-nav a.active {
     font-weight: 600;
 }
 
-/* Page Layout Container */
+/* Page Layout Container - Left-Aligned */
 .container {
-    max-width: 1060px;
-    margin: 18px auto;
-    padding: 0 16px;
+    max-width: 1200px;
+    margin: 16px 24px;
+    padding: 0;
 }
 
 .layout-grid {
     display: flex;
-    gap: 18px;
+    gap: 16px;
 }
 
 .main-content {
@@ -127,6 +125,10 @@ nav.main-nav a.active {
     .layout-grid {
         flex-direction: column;
     }
+    .container, .header-inner, .nav-inner, .footer-inner {
+        margin-left: 14px;
+        margin-right: 14px;
+    }
 }
 
 /* Cards & Content Blocks */
@@ -134,112 +136,112 @@ nav.main-nav a.active {
     background-color: #ffffff;
     border: 1px solid #d0d7de;
     border-radius: 4px;
-    padding: 18px;
-    margin-bottom: 16px;
+    padding: 16px;
+    margin-bottom: 14px;
 }
 
 .card h2 {
     color: #111827;
     border-bottom: 1px solid #e1e4e8;
-    padding-bottom: 6px;
-    margin-bottom: 12px;
-    font-size: 18px;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+    font-size: 17px;
     font-weight: 600;
 }
 
 .card h3 {
     color: #1f2937;
-    margin: 12px 0 6px 0;
-    font-size: 15px;
+    margin: 10px 0 5px 0;
+    font-size: 14px;
     font-weight: 600;
 }
 
-/* Clean Severity Alert Blocks */
+/* Clean Alert Blocks */
 .block-severe {
     background-color: #fafafa;
     border: 1px solid #d0d7de;
     border-left: 4px solid #cf222e;
-    padding: 10px 14px;
-    margin-bottom: 12px;
+    padding: 10px 12px;
+    margin-bottom: 10px;
     border-radius: 3px;
-    font-size: 13.5px;
+    font-size: 13px;
 }
 
 .block-warning {
     background-color: #fafafa;
     border: 1px solid #d0d7de;
     border-left: 4px solid #d97706;
-    padding: 10px 14px;
-    margin-bottom: 12px;
+    padding: 10px 12px;
+    margin-bottom: 10px;
     border-radius: 3px;
-    font-size: 13.5px;
+    font-size: 13px;
 }
 
 .block-safe {
     background-color: #fafafa;
     border: 1px solid #d0d7de;
     border-left: 4px solid #1a7f37;
-    padding: 10px 14px;
-    margin-bottom: 12px;
+    padding: 10px 12px;
+    margin-bottom: 10px;
     border-radius: 3px;
-    font-size: 13.5px;
+    font-size: 13px;
 }
 
-/* Simple Alert Box (No Neon Glow Animations) */
+/* Alert Box */
 .glowing-alert {
     background-color: #ffffff;
     border: 1px solid #d0d7de;
     border-left: 4px solid #cf222e;
     color: #24292e;
-    padding: 12px 16px;
+    padding: 10px 14px;
     border-radius: 4px;
     text-align: left;
-    margin-bottom: 16px;
+    margin-bottom: 14px;
 }
 
 .glowing-alert h3 {
     color: #cf222e;
-    font-size: 15px;
+    font-size: 14px;
     font-weight: 700;
-    margin-bottom: 4px;
+    margin-bottom: 3px;
 }
 
 .glowing-alert p {
-    font-size: 13.5px;
+    font-size: 13px;
 }
 
 /* Blockquote */
 blockquote.official-quote {
     background: #f6f8fa;
-    border-left: 4px solid #57606a;
-    margin: 14px 0;
-    padding: 10px 16px;
+    border-left: 3px solid #57606a;
+    margin: 12px 0;
+    padding: 8px 14px;
     font-style: italic;
     color: #374151;
-    font-size: 13.5px;
+    font-size: 13px;
 }
 
 blockquote.official-quote footer {
     font-style: normal;
     font-weight: 600;
-    margin-top: 6px;
+    margin-top: 5px;
     color: #1f2937;
-    font-size: 12.5px;
+    font-size: 12px;
 }
 
 /* Tables */
 .data-table {
     width: 100%;
     border-collapse: collapse;
-    margin: 14px 0;
+    margin: 12px 0;
     background-color: #ffffff;
-    font-size: 13.5px;
+    font-size: 13px;
 }
 
 .data-table caption {
-    font-size: 14px;
+    font-size: 13.5px;
     font-weight: 600;
-    padding: 8px 4px;
+    padding: 6px 2px;
     color: #111827;
     caption-side: top;
     text-align: left;
@@ -247,7 +249,7 @@ blockquote.official-quote footer {
 
 .data-table th, .data-table td {
     border: 1px solid #d0d7de;
-    padding: 8px 12px;
+    padding: 7px 10px;
     text-align: left;
 }
 
@@ -268,16 +270,16 @@ blockquote.official-quote footer {
 .data-table tfoot td {
     background-color: #f6f8fa;
     font-weight: 600;
-    font-size: 12.5px;
+    font-size: 12px;
     color: #57606a;
 }
 
-/* Clean Badges for severity levels */
+/* Badges */
 .status-pill {
     display: inline-block;
-    padding: 2px 7px;
+    padding: 2px 6px;
     border-radius: 3px;
-    font-size: 11.5px;
+    font-size: 11px;
     font-weight: 600;
     border: 1px solid #d0d7de;
     background-color: #ffffff;
@@ -286,24 +288,24 @@ blockquote.official-quote footer {
 .status-pill.moderate { border-color: #fcd34d; color: #b45309; }
 .status-pill.low { border-color: #86efac; color: #166534; }
 
-/* Forms & Controls */
+/* Forms */
 .form-group {
-    margin-bottom: 12px;
+    margin-bottom: 10px;
 }
 
 .form-group label {
     display: block;
     font-weight: 600;
-    font-size: 13px;
-    margin-bottom: 4px;
+    font-size: 12.5px;
+    margin-bottom: 3px;
     color: #24292e;
 }
 
 .form-control {
     font-family: inherit;
     width: 100%;
-    padding: 7px 10px;
-    font-size: 13.5px;
+    padding: 6px 9px;
+    font-size: 13px;
     border: 1px solid #d0d7de;
     border-radius: 3px;
     outline: none;
@@ -327,33 +329,33 @@ blockquote.official-quote footer {
 
 .error-msg {
     color: #cf222e;
-    font-size: 11.5px;
+    font-size: 11px;
     display: block;
-    margin-top: 3px;
-    min-height: 16px;
+    margin-top: 2px;
+    min-height: 15px;
     font-weight: normal;
 }
 
 fieldset {
     border: 1px solid #d0d7de;
-    padding: 14px;
+    padding: 12px;
     border-radius: 4px;
-    margin-bottom: 14px;
+    margin-bottom: 12px;
     background-color: #ffffff;
 }
 
 legend {
     font-weight: 600;
-    padding: 0 6px;
+    padding: 0 5px;
     color: #111827;
-    font-size: 13.5px;
+    font-size: 13px;
 }
 
 .radio-group, .checkbox-group {
     display: flex;
-    gap: 16px;
+    gap: 14px;
     margin-top: 4px;
-    font-size: 13.5px;
+    font-size: 13px;
 }
 
 .radio-group label, .checkbox-group label {
@@ -363,8 +365,8 @@ legend {
 
 .btn {
     font-family: inherit;
-    padding: 7px 14px;
-    font-size: 13px;
+    padding: 6px 12px;
+    font-size: 12.5px;
     font-weight: 600;
     border-radius: 3px;
     cursor: pointer;
@@ -397,18 +399,18 @@ legend {
     background-color: #f6fdf8;
     border: 1px solid #2da44e;
     color: #1a7f37;
-    padding: 12px 14px;
+    padding: 10px 12px;
     border-radius: 4px;
-    margin-top: 14px;
+    margin-top: 12px;
     display: none;
-    font-size: 13.5px;
+    font-size: 13px;
 }
 
 /* Image & Map */
 .map-container {
-    text-align: center;
+    text-align: left;
     background: #ffffff;
-    padding: 12px;
+    padding: 10px;
     border: 1px solid #d0d7de;
     border-radius: 4px;
 }
@@ -420,86 +422,86 @@ legend {
     border-radius: 3px;
 }
 
-/* Lists and DL */
+/* Lists */
 ol.workflow-list, ul.feed-list {
-    margin-left: 22px;
-    margin-bottom: 12px;
+    margin-left: 20px;
+    margin-bottom: 10px;
 }
 
 ol.workflow-list li, ul.feed-list li {
-    margin-bottom: 5px;
-    font-size: 13.5px;
+    margin-bottom: 4px;
+    font-size: 13px;
 }
 
 dl.abbr-list {
-    margin: 10px 0;
+    margin: 8px 0;
 }
 
 dl.abbr-list dt {
     font-weight: 600;
     color: #111827;
-    margin-top: 6px;
-    font-size: 13.5px;
-}
-
-dl.abbr-list dd {
-    margin-left: 18px;
-    color: #4b5563;
+    margin-top: 5px;
     font-size: 13px;
 }
 
-/* Analytics Dashboard Output */
+dl.abbr-list dd {
+    margin-left: 16px;
+    color: #4b5563;
+    font-size: 12.5px;
+}
+
+/* Analytics */
 .calc-result-box {
     background-color: #f6f8fa;
     border: 1px solid #d0d7de;
     border-radius: 4px;
-    padding: 12px;
-    margin-top: 12px;
-    font-size: 13.5px;
+    padding: 10px;
+    margin-top: 10px;
+    font-size: 13px;
 }
 
 .stat-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
-    gap: 10px;
-    margin: 12px 0;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 8px;
+    margin: 10px 0;
 }
 
 .stat-card {
     background: #ffffff;
     border: 1px solid #d0d7de;
     border-radius: 4px;
-    padding: 10px;
+    padding: 8px;
     text-align: center;
 }
 
 .stat-card .stat-val {
-    font-size: 20px;
+    font-size: 18px;
     font-weight: bold;
     color: #111827;
 }
 
 .stat-card .stat-label {
-    font-size: 11px;
+    font-size: 10.5px;
     color: #57606a;
     text-transform: uppercase;
 }
 
-/* Footer - Left-Aligned */
+/* Footer - Left-Aligned with minimal margin */
 footer.site-footer {
     background-color: #ffffff;
     color: #57606a;
     text-align: left;
-    padding: 18px 0;
-    font-size: 12.5px;
-    margin-top: 24px;
+    padding: 16px 0;
+    font-size: 12px;
+    margin-top: 20px;
     border-top: 1px solid #d0d7de;
 }
 
 .footer-inner {
-    max-width: 1060px;
-    margin: 0 auto;
-    padding: 0 16px;
+    max-width: 1200px;
+    margin-left: 24px;
+    margin-right: 24px;
     text-align: left;
 }
 

@@ -1,6 +1,6 @@
 # CLIMATE INTELLIGENCE HEATWAVE MONITORING & EARLY WARNING WEB PORTAL
 ## Comprehensive Project Compendium & Viva Defense Guide
-**Semester:** III | **Class/Div:** SY C-1 | **Academic Year:** 2026–27  
+**Semester:** III | **Class/Div:** SY C-1 | **Academic Year:** 2026-27  
 **Mini Project Evaluation Date:** Thursday, 8th October 2026 (During Lab Hours)  
 **Total Marks:** 25 Marks (Based on Lab Experiments 1 to 5)
 
@@ -476,7 +476,7 @@ const climateData = {
 * **Q1: Why do we call `event.preventDefault()` inside a form submit handler?**  
   * *Answer:* By default, submitting an HTML form sends an HTTP POST/GET request and reloads the web page. Calling `event.preventDefault()` stops that default browser action, allowing our JavaScript validation function to check fields, display errors, and keep user data intact on screen.
 * **Q2: Explain the Regular Expression `/^[6-9]\d{9}$/` used for mobile numbers.**  
-  * *Answer:* `^` matches the beginning of the string. `[6-9]` requires the first digit to be 6, 7, 8, or 9 (standard Indian mobile prefix). `\d{9}` requires exactly nine more numeric digits (0–9). `$` matches the end of the string, ensuring the input is strictly 10 digits without trailing letters or symbols.
+  * *Answer:* `^` matches the beginning of the string. `[6-9]` requires the first digit to be 6, 7, 8, or 9 (standard Indian mobile prefix). `\d{9}` requires exactly nine more numeric digits (0-9). `$` matches the end of the string, ensuring the input is strictly 10 digits without trailing letters or symbols.
 * **Q3: What does the `this` keyword refer to inside an object method?**  
   * *Answer:* In JavaScript, when a function is invoked as a method of an object (like `climateData.determineRisk()`), `this` refers to the object that owns and called the method, giving it direct access to properties like `this.temperature` and `this.humidity`.
 * **Q4: How did you calculate average temperature from the array?**  
@@ -485,12 +485,12 @@ const climateData = {
 ---
 
 # PART 4: TEAM PRESENTATION ROADMAP (FOR 8TH OCTOBER)
-### Recommended 8–10 Minute Group Defense Script
+### Recommended 8-10 Minute Group Defense Script
 
 | Time | Speaker | Slides Covered | Key Talking Points & Live Demo Actions |
 | :---: | :--- | :---: | :--- |
-| **0:00 – 2:00** | **Mohammad Palekar** | **Slides 1 – 4** | • Introduce project title and team members.<br>• State the climate intelligence problem statement and rising heatwave challenges.<br>• Outline core project objectives and rubric compliance (25/25 target). |
-| **2:00 – 4:00** | **Mohammad Palekar** | **Slides 5, 7, 8** | • Explain HTML5 semantic landmarks and separation of concerns.<br>• Demonstrate **Home Portal (`index.html`)** & **Alert Bulletin (`alerts.html`)** showcasing `<mark>`, `<abbr>`, `<sup>`, `<sub>`.<br>• Show **Hotspot Map (`hotspot.html`)** clicking North/Central zones. |
-| **4:00 – 6:00** | **Gaurav** | **Slides 6, 9 (Forecast)** | • Explain CSS3 architecture: external `style.css`, Flexbox layout grid, and mobile responsiveness.<br>• Demonstrate the **Forecast Table (`forecast.html`)**: highlight `rowspan`, `colspan`, and `:nth-child(even)` zebra-striping.<br>• Point out the glowing alert box running on `@keyframes alertGlow`. |
-| **6:00 – 8:00** | **Samarth** | **Slides 9 (Analytics), 10 (Form)** | • Open **Climate Analytics (`analysis.html`)**: demonstrate live array traversal (min 34°C, max 42°C, avg 38.1°C) and OOP object methods.<br>• Open **Registration Form (`register.html`)**: click Submit with blank fields to trigger red border error states; then enter valid data to trigger the green success message. |
-| **8:00 – 9:00** | **All 3 Members** | **Slides 11 – 13** | • Summarize technical concepts covered across Experiments 1 to 5.<br>• Present Future Scope (IoT sensors, WebSockets, PWAs).<br>• Conclude and open floor for Examiner / Faculty Viva Q&A. |
+| **0:00 - 2:00** | **Mohammad Palekar** | **Slides 1 - 4** | - Introduce project title and team members.<br>- State the climate intelligence problem statement and rising heatwave challenges.<br>- Outline core project objectives and rubric compliance (25/25 target). |
+| **2:00 - 4:00** | **Mohammad Palekar** | **Slides 5, 7, 8** | - Explain HTML5 semantic landmarks and separation of concerns.<br>- Demonstrate **Home Portal (`index.html`)** & **Alert Bulletin (`alerts.html`)** showcasing `<mark>`, `<abbr>`, `<sup>`, `<sub>`.<br>- Show **Hotspot Map (`hotspot.html`)** clicking North/Central zones. |
+| **4:00 - 6:00** | **Gaurav** | **Slides 6, 9 (Forecast)** | - Explain CSS3 architecture: external `style.css`, Flexbox layout grid, and mobile responsiveness.<br>- Demonstrate the **Forecast Table (`forecast.html`)**: highlight `rowspan`, `colspan`, and `:nth-child(even)` zebra-striping.<br>- Point out the glowing alert box running on `@keyframes alertGlow`. |
+| **6:00 - 8:00** | **Samarth** | **Slides 9 (Analytics), 10 (Form)** | - Open **Climate Analytics (`analysis.html`)**: demonstrate live array traversal (min 34°C, max 42°C, avg 38.1°C) and OOP object methods.<br>- Open **Registration Form (`register.html`)**: click Submit with blank fields to trigger red border error states; then enter valid data to trigger the green success message. |
+| **8:00 - 9:00** | **All 3 Members** | **Slides 11 - 13** | - Summarize technical concepts covered across Experiments 1 to 5.<br>- Present Future Scope (IoT sensors, WebSockets, PWAs).<br>- Conclude and open floor for Examiner / Faculty Viva Q&A. |
