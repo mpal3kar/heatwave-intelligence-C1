@@ -1,10 +1,10 @@
 /* 
-   Mini Project: Climate Intelligence for Heatwave Monitoring & Early Warning System
+   Climate Intelligence for Heatwave Monitoring & Early Warning System
    Team Members: Mohammad Palekar (16010125167), Gaurav (16010125164), Samarth (16010125161)
-   Academic Year: 2026-27 | Div: C-1
+   Div: C-1
 */
 
-/* Reset & Clean Student Base Styling */
+/* Reset & Human-Crafted Student Styling */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -12,45 +12,49 @@
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, "Roboto", "Helvetica Neue", Arial, sans-serif;
     background-color: #f8f9fa;
     color: #24292e;
-    line-height: 1.5;
+    line-height: 1.55;
     padding-bottom: 30px;
 }
 
-/* Header Section */
+/* Header Section - Left-Aligned */
 header.site-header {
     background-color: #ffffff;
     border-bottom: 1px solid #d0d7de;
-    padding: 16px 20px;
-    text-align: center;
+    padding: 18px 0;
+    text-align: left;
+}
+
+.header-inner {
+    max-width: 1060px;
+    margin: 0 auto;
+    padding: 0 16px;
+    text-align: left;
 }
 
 .site-title {
-    color: #1a202c;
+    color: #111827;
     font-size: 24px;
-    font-weight: bold;
-    margin: 4px 0;
-}
-
-.site-subtitle {
-    font-size: 13px;
-    color: #57606a;
-    margin-bottom: 8px;
+    font-weight: 700;
+    margin: 0 0 6px 0;
+    text-align: left;
+    letter-spacing: -0.3px;
 }
 
 .team-badge {
     display: inline-block;
     background: #f6f8fa;
-    color: #24292e;
+    color: #4b5563;
     font-size: 12px;
-    padding: 3px 12px;
+    padding: 3px 10px;
     border-radius: 3px;
     border: 1px solid #d0d7de;
+    text-align: left;
 }
 
-/* Simple Human-Made Navigation Bar */
+/* Navigation Bar - Left-Aligned */
 nav.main-nav {
     background-color: #24292e;
     position: sticky;
@@ -59,11 +63,17 @@ nav.main-nav {
     border-bottom: 1px solid #1b1f23;
 }
 
+nav.main-nav .nav-inner {
+    max-width: 1060px;
+    margin: 0 auto;
+    padding: 0 16px;
+}
+
 nav.main-nav ul {
     list-style-type: none;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: flex-start; /* LEFT ALIGNED */
     margin: 0;
     padding: 0;
 }
@@ -78,7 +88,7 @@ nav.main-nav a {
     text-decoration: none;
     padding: 10px 14px;
     font-size: 13.5px;
-    font-weight: normal;
+    font-weight: 500;
     transition: background-color 0.15s ease;
 }
 
@@ -90,7 +100,7 @@ nav.main-nav a:hover {
 nav.main-nav a.active {
     background-color: #0969da;
     color: #ffffff;
-    font-weight: bold;
+    font-weight: 600;
 }
 
 /* Page Layout Container */
@@ -129,7 +139,7 @@ nav.main-nav a.active {
 }
 
 .card h2 {
-    color: #1a202c;
+    color: #111827;
     border-bottom: 1px solid #e1e4e8;
     padding-bottom: 6px;
     margin-bottom: 12px;
@@ -138,7 +148,7 @@ nav.main-nav a.active {
 }
 
 .card h3 {
-    color: #24292e;
+    color: #1f2937;
     margin: 12px 0 6px 0;
     font-size: 15px;
     font-weight: 600;
@@ -175,7 +185,7 @@ nav.main-nav a.active {
     font-size: 13.5px;
 }
 
-/* Simple Alert Box (No Neon Glowing Animations) */
+/* Simple Alert Box (No Neon Glow Animations) */
 .glowing-alert {
     background-color: #ffffff;
     border: 1px solid #d0d7de;
@@ -190,7 +200,7 @@ nav.main-nav a.active {
 .glowing-alert h3 {
     color: #cf222e;
     font-size: 15px;
-    font-weight: bold;
+    font-weight: 700;
     margin-bottom: 4px;
 }
 
@@ -211,13 +221,13 @@ blockquote.official-quote {
 
 blockquote.official-quote footer {
     font-style: normal;
-    font-weight: bold;
+    font-weight: 600;
     margin-top: 6px;
     color: #1f2937;
     font-size: 12.5px;
 }
 
-/* Tables (Experiment 1 Task 7 & Experiment 2 Task 7) */
+/* Tables */
 .data-table {
     width: 100%;
     border-collapse: collapse;
@@ -228,9 +238,9 @@ blockquote.official-quote footer {
 
 .data-table caption {
     font-size: 14px;
-    font-weight: bold;
+    font-weight: 600;
     padding: 8px 4px;
-    color: #24292e;
+    color: #111827;
     caption-side: top;
     text-align: left;
 }
@@ -243,7 +253,7 @@ blockquote.official-quote footer {
 
 .data-table thead th {
     background-color: #f6f8fa;
-    color: #1a202c;
+    color: #111827;
     font-weight: 600;
 }
 
@@ -268,7 +278,7 @@ blockquote.official-quote footer {
     padding: 2px 7px;
     border-radius: 3px;
     font-size: 11.5px;
-    font-weight: bold;
+    font-weight: 600;
     border: 1px solid #d0d7de;
     background-color: #ffffff;
 }
@@ -276,7 +286,7 @@ blockquote.official-quote footer {
 .status-pill.moderate { border-color: #fcd34d; color: #b45309; }
 .status-pill.low { border-color: #86efac; color: #166534; }
 
-/* Forms & Validation (Experiments 1, 2, 4, 5) */
+/* Forms & Controls */
 .form-group {
     margin-bottom: 12px;
 }
@@ -290,6 +300,7 @@ blockquote.official-quote footer {
 }
 
 .form-control {
+    font-family: inherit;
     width: 100%;
     padding: 7px 10px;
     font-size: 13.5px;
@@ -334,7 +345,7 @@ fieldset {
 legend {
     font-weight: 600;
     padding: 0 6px;
-    color: #24292e;
+    color: #111827;
     font-size: 13.5px;
 }
 
@@ -351,6 +362,7 @@ legend {
 }
 
 .btn {
+    font-family: inherit;
     padding: 7px 14px;
     font-size: 13px;
     font-weight: 600;
@@ -392,7 +404,7 @@ legend {
     font-size: 13.5px;
 }
 
-/* Image & Hotspot Map */
+/* Image & Map */
 .map-container {
     text-align: center;
     background: #ffffff;
@@ -408,7 +420,7 @@ legend {
     border-radius: 3px;
 }
 
-/* Lists and DL Glossary */
+/* Lists and DL */
 ol.workflow-list, ul.feed-list {
     margin-left: 22px;
     margin-bottom: 12px;
@@ -424,8 +436,8 @@ dl.abbr-list {
 }
 
 dl.abbr-list dt {
-    font-weight: bold;
-    color: #1a202c;
+    font-weight: 600;
+    color: #111827;
     margin-top: 6px;
     font-size: 13.5px;
 }
@@ -464,7 +476,7 @@ dl.abbr-list dd {
 .stat-card .stat-val {
     font-size: 20px;
     font-weight: bold;
-    color: #1a202c;
+    color: #111827;
 }
 
 .stat-card .stat-label {
@@ -473,15 +485,22 @@ dl.abbr-list dd {
     text-transform: uppercase;
 }
 
-/* Footer */
+/* Footer - Left-Aligned */
 footer.site-footer {
     background-color: #ffffff;
     color: #57606a;
-    text-align: center;
-    padding: 18px;
+    text-align: left;
+    padding: 18px 0;
     font-size: 12.5px;
     margin-top: 24px;
     border-top: 1px solid #d0d7de;
+}
+
+.footer-inner {
+    max-width: 1060px;
+    margin: 0 auto;
+    padding: 0 16px;
+    text-align: left;
 }
 
 footer.site-footer a {
